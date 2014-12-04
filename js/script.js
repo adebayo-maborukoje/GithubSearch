@@ -12,7 +12,8 @@ var githubSearch = {
           };
 
           var response = function(user) {
-                var displayResult = '<ul>';   
+                var displayResult = '<ul>';
+                    displayResult += '<p>RESULTS:</p>';   
                     $.each(user.items, function( i , list) {
                       displayResult += '<li class="listItems">';
                       displayResult += '<a href="'+ list.avatar_url +'">';
